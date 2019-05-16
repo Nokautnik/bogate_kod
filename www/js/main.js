@@ -82,3 +82,22 @@ function getItem() {
         $(this).parents(".dropdown").find('.btn').val($(this).data('value'));
     });
 }
+// plik javaScript do definowania funkcji
+// metody objete w funkcjach jss 
+function logIn() { 
+    $(".log-in").click(function () {
+        $(".signIn").addClass("active-dx");
+        $(".signUp").addClass("inactive-sx");
+        $(".signUp").removeClass("active-sx");
+        $(".signIn").removeClass("inactive-dx");
+    });
+}
+
+function signIn() {
+    $(".back").click(function () {
+        $(".signUp").addClass("active-sx");
+        $(".signIn").addClass("inactive-dx");
+        $(".signIn").removeClass("active-dx");
+        $(".signUp").removeClass("inactive-sx");
+    });
+}
