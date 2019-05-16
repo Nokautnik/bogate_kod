@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
@@ -16,8 +16,33 @@
 <body>
     <div class="container" style="padding:0px 0px 0px 0px">
         <div w3-include-html="menu.html"></div>
-        <center><h1>Logowanie</h1></center>
+		<!--Twój HTML-->
+        <div>
+            <form class="signUp">
+                <h3>Create Your Account</h3>
+                <p>
+                    Just enter your email address</br>
+                    and your password for join.
+                </p>
+                <input class="w100" type="email" placeholder="Insert eMail" reqired autocomplete='off' />
+                <input type="password" placeholder="Insert Password" reqired />
+                <input type="password" placeholder="Verify Password" reqired />
+                <button class="form-btn sx log-in" type="button">Log In</button>
+                <button class="form-btn dx" type="submit">Sign Up</button>
+            </form>
+            <form class="signIn">
+                <h3>Welcome</br>Back !</h3>
+                <button class="fb" type="button">Log In With Facebook</button>
+                <p>- or -</p>
+                <input type="email" placeholder="Insert eMail" autocomplete='off' reqired />
+                <input type="password" placeholder="Insert Password" reqired />
+                <button class="form-btn sx back" type="button">Back</button>
+            </form>
+        </div>
+		<!--Koniec twojego HTML-->
     </div>
     <script>includeHTML();</script>
+    <script>logIn();</script><!--to trzeba dla funkcji-->
+    <script>signIn();</script><!--to trzeba dla funkcji-->
 </body>
 </html>
