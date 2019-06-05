@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/style.css" type="text/css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../css/bootstrap.css" type="text/css" />
+    <script type="text/javascript" src="../js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../js/main.js"></script>
+</head>
+<body>
+    <div class="container" style="padding:0px 0px 0px 0px;position:relative">
+        <div w3-include-html="menu.html"></div>
+        <dir class="dataBody">
+            <center><h1>O NAS</h1></center>
+        </dir>
+
+        <script> type="text/javascript"
+            var napis = "Hello World!";
+            zadanie1(napis);
+            
+            function zadanie1(napis){
+    var dict = {};
+
+    function pom_f(ch){
+        if(!dict.hasOwnProperty(ch)) {
+            dict[ch] = 0;
+        }
+        dict[ch]++;
+    }
+
+    napis.split('').forEach(pom_f)
+    console.log(dict);
+}
+</script>
+    </div>
+    <script>includeHTML();</script>
+</body>
+</html>
