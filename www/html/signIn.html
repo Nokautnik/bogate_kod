@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="../css/style.css" type="text/css">
+    <title>Firebase Login</title>
+
+</head>
+<body>
+ 
+<div id="login_div" class="main-div">
+        <h3>Firebase Web login Example</h3>
+        <input type="email" placeholder="Email..." id="email_field" />
+        <input type="password" placeholder="Password..." id="password_field" />
+    
+        <button onclick="login()">Login to Account</button>
+        <button onclick="create_account()">Create a new account</button>
+        </div>
+    
+        <div id="user_div" class="loggedin-div">
+        <h3>Welcome User</h3>
+        <p id="user_para">Welcome to Firebase web login Example. You're currently logged in.</p>
+        <button onclick="logout()">Logout</button>
+        <button id="verify_btn" onclick="send_verification()">Send verification</button>
+        </div>
+    
+    
+    
+        <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+        <script>
+        var firebaseConfig = {
+            apiKey: "AIzaSyB06d2W62viVhTxNX-RTX1EVXy6Rrhl5AA",
+            authDomain: "zadziala-f2c18.firebaseapp.com",
+            databaseURL: "https://zadziala-f2c18.firebaseio.com",
+            projectId: "zadziala-f2c18",
+            storageBucket: "zadziala-f2c18.appspot.com",
+            messagingSenderId: "885622318474",
+            appId: "1:885622318474:web:784f3ce2500dbf3a"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        </script>
+        <script src="../js/main.js"></script>
+    
+    </body>
+</html>

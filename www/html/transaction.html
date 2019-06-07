@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/style.css" type="text/css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../css/bootstrap.css" type="text/css" />
+    <script type="text/javascript" src="../js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../js/main.js"></script>
+</head>
+<body>
+    <div class="container" style="padding:0px 0px 0px 0px;position:relative">
+        <div w3-include-html="menu.html"></div>
+        <dir class="dataBody">
+            <div class="text">
+                Dodaj zrealizowaną transakcje.<br />
+                Zbuduj historie swoich operacji!
+            </div>
+            <div class="separator"></div>
+            <!-- Poczatek wyswietlenia przycisku TRANSAKCJA -->
+            <select id="transactionEnd" class="btn btn-primary dropdown-toggle center-block" aria-haspopup="true" aria-expanded="false" style="width:75%;text-transform:uppercase;height:40px">
+                <option value="sale">KUPNO</option>
+                <option value="purchase" style="text-align:center">SPRZEDAŻ</option>
+            </select>
+            <!-- Koniec wyswietlenia przycisku TRANSAKCJA -->
+            <div class="separator"></div>
+            <!-- Poczatek wyswietlenia przycisku WALUTA -->
+            <select id="currencyEnd" class="btn btn-primary dropdown-toggle center-block" aria-haspopup="true" aria-expanded="false" style="width:75%;text-transform:uppercase;height:40px">
+                <option value="EUR">EURO</option>
+                <option value="USD" style="text-align:center">DOLAR</option>
+                <option value="GBP" style="text-align:center">FUNT BRYTYJSKI</option>
+                <option value="CHF" style="text-align:center">FRANK SZWAJCARSKI</option>
+                <option value="SEK" style="text-align:center">KORONA SZWEDZKA</option>
+            </select>
+            <!-- Koniec wyswietlenia przycisku WALUTA -->
+            <div class="separator"></div>
+            <!-- Poczatek wyswietlenia przycisku WALUTA -->
+
+            <select id="cantorEnd" class="btn btn-primary dropdown-toggle center-block" aria-haspopup="true" aria-expanded="false" style="width:75%;text-transform:uppercase;height:40px">
+                <option value="GROSZEK">GROSZEK</option>
+                <option value="EXCHANGE" style="text-align:center">EXCHANGE</option>
+                <option value="KARMELICKA" style="text-align:center">KARMELICKA</option>
+                <option value="INNY" style="text-align:center">INNY</option>
+            </select>
+            <!-- Koniec wyswietlenia przycisku WALUTA -->
+            <div class="separator"></div>
+            <!-- Poczatek wyswietlenia inputBoxa ILOSC WALUTY -->
+            <div class="form-group">
+                <input type="number" name="howMuchEnd" class="form-control center-block" id="howMuch" placeholder="Ilość waluty obcej" style="width:75%;text-align:center;height:40px">
+            </div>
+            <!-- Koniec wyswietlenia przycisku inputBoxa ILOSC WALUTY-->
+            <div class="separator"></div>
+            <!-- Poczatek wyswietlenia inputBoxa KURS JEDNOSTKOWY -->
+            <div class="form-group">
+                <input type="number" name="unitRateEnd" class="form-control center-block" id="unitRate" placeholder="Kurs jednostkowy" style="width:75%;text-align:center;height:40px">
+            </div>
+            <!-- Koniec wyswietlenia przycisku inputBoxa KURS JEDNOSTKOWY-->
+            <div class="separator"></div>
+            <div class="form-group">
+                <input type="date" name="getDateEnd" value="" class="form-control center-block" id="getDate" style="width:75%;padding-top:inherit;height:40px">
+            </div>
+            <div class="separator"></div>
+            <!-- Poczatek wyswietlenia przycisku SZUKAJ -->
+            <button class="btn btn-success center-block" type="button" id="search" aria-haspopup="true" aria-expanded="false" style="width:75%;height:40px" onclick="clickMe()">
+                DODAJ
+            </button>
+            <!-- Koniec wyswietlenia przycisku SZUKAJ -->
+        </dir>           
+    </div>
+    <script>includeHTML();</script>
+    <script>getItem();</script>
+</body>
+</html>
