@@ -12,75 +12,28 @@
     <script type="text/javascript" src="../js/bootstrap.min.js"></script>
     <script type="text/javascript" src="../js/main.js"></script>
 </head>
-<body>
-    <div class="container" style="padding:0px 0px 0px 0px;position:relative">
-        <div w3-include-html="menu.html"></div>
-      
-
-
-    
-    <dir class="separator"></dir>
-    <center>
-        <dir class="historyBox">
-             <font size="5" color="red"><b>EURO</b></font><br />
-           <i> <font size="2" color="red" face="Arial">Twoja ulubiona waluta</font></i>
-           
-        </dir>
-    </center>
-    
-</dir>
-
-<dir class="separator"></dir>
-<center>
-    <dir class="historyBox">
-            
-         <font size="5" color="red"><b>7</b></font><br />
-       <i> <font size="2" color="red" face="Arial">Liczba wszystkich transakcji</font></i>
-       
-    </dir>
-</center>
-</dir>
-
-<dir class="separator"></dir>
-<center>
-    <dir class="historyBox">
-         <font size="5" color="red"><b>150000 zł</b></font><br />
-       <i> <font size="2" color="red" face="Arial">Łączna wartość wymiany</font></i>
-       
-    </dir>
-</center>
-</dir>
-
-<dir class="separator"></dir>
-<center>
-    <dir class="historyBox">
-         <font size="5" color="red"><b>5</b></font><br />
-       <i> <font size="2" color="red" face="Arial">Odwiedzonych kantorów</font></i>
-       
-    </dir>
-</center>
-</dir>
-
-<dir class="dataBody" id="historyID">
-        <!-- Poczatek wyswietlenia przycisku WALUTA -->
-        <div class="dropdown">
-            <button class="btn btn-primary dropdown-toggle center-block" type="button" id="transaction" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="width:75%;text-transform:uppercase">
-                SORTUJ
-            </button>
-            <div class="dropdown-menu dropdown-menu-center" aria-labelledby="transaction" style="width:75%;text-transform:uppercase">
-                <a class="dropdown-item"><center>NAJSTARSZE</center></a>
-                <a class="dropdown-item"><center>NAJNOWSZE</center></a>
+<body style="background-image:url('../images/money.jpg')">
+    <div style="padding:0px 0px 0px 0px;position:relative">
+        <!-- Top Navigation Menu -->
+        <div class="topnav">
+            <a class="active" style="text-align:center;font-size:15px;color:white"><b>KONTO UŻYTKOWNIKA</b></a>
+            <div id="myLinks">
+                <a href="../index.html">HOME</a>
+                <a href="javascript:checkLogin('no','transaction.html');">DODAJ TRANSAKCJE</a>
+                <a href="javascript:checkLogin('no','history.html');">HISTORIA OPERACJI</a>
+                <a href="javascript:checkLogin('no','account.html');">KONTO UŻYTKOWNIKA</a>
+                <a href="signIn.html">ZALOGUJ SIĘ</a>
             </div>
+            <a href="javascript:void(0);" class="icon" onclick="menuFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
         </div>
-
+        <!-- End Navigation Manu -->
+        <dir class="dataBody" id="accountID">
+            <center><h1>Konto uzytkownika</h1></center>
+        </dir>
     </div>
-    <script>includeHTML();</script>
-    <script>//showTest();</script>
-    <script>getItem();</script>
-    <script>showCurrency();</script>
-    <script>//showTransactionAmount();</script>
-    <script>showExchangeValueCurrency();</script>
-    <script>showNumberOfEchangeOffices()</script>
-    <script>showAmount()</script>
+    <script>accountResult()</script>
+
 </body>
 </html>
