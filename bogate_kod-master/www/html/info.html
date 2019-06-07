@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/style.css" type="text/css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../css/bootstrap.css" type="text/css" />
+    <script type="text/javascript" src="../js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../js/main.js"></script>
+    <script type="text/javascript" src="../js/historyJS.js"></script>
+</head>
+<body style="background-image:url('../images/money.jpg')">
+    <div style="padding:0px 0px 0px 0px;position:relative">
+        <!-- Top Navigation Menu -->
+        <div class="topnav">
+            <a class="active" style="text-align:center;font-size:15px;color:white"><b>INFORMACJE</b></a>
+            <div id="myLinks">
+                <a href="../index.html">HOME</a>
+                <a href="javascript:checkLogin('no','transaction.html');">DODAJ TRANSAKCJE</a>
+                <a href="javascript:checkLogin('no','history.html');">HISTORIA OPERACJI</a>
+                <a href="javascript:checkLogin('no','account.html');">KONTO UŻYTKOWNIKA</a>
+                <a href="signIn.html">ZALOGUJ SIĘ</a>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="menuFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+        <!-- End Navigation Manu -->
+        <div class="separator"></div>
+        <div class="borderText">
+            <div class="textInfo">
+                I. Aplikacja działa w oparciu o API udostępniane dzięki portalowi <b>quantor.pl</b>
+            </div>
+        </div>
+        <div class="separator"></div>
+        <div class="borderText">
+            <div class="textInfo">
+                II. Kursy walut mogą nieznacznie odbiegać od aktualnie oferowanych w kantorze. <br />
+            </div>
+        </div>
+        <div class="separator"></div>
+        <div class="borderText">
+            <div class="textInfo">
+                III. W wynikach wyszukiwania pojawia się określenie odległości do konkretnego kantoru i jest ona wyznaczana w linii prostej,
+                dlatego rzeczywista odległość może się nieco różnić.
+            </div>
+        </div>
+    </div>
+</body>
+</html>
